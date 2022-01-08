@@ -398,6 +398,31 @@ body
         margin-left: 15%;
 
     }
+    
+}
+
+@media(max-width: 550px)
+{
+    .principal .principal-content .principal-content-text
+    {
+        width: 300px;
+    }
+
+    .principal .principal-content .principal-content-text .principal-content-text-titulo
+    {
+        font-size: 2em;
+    }
+
+    .principal .principal-content .principal-content-text .principal-content-text-paragrafo
+    {
+        font-size: 1em;
+    }
+
+    .principal .principal-content .principal-content-img img
+    {
+        margin-left: 0;
+        height: 200px;
+    }
 }
 
 
