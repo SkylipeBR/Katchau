@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho
+{
+    background: #292929;
+}
+
+.cabecalho-nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.nav-list .nav-item
+{
+    list-style: none;
+
+    padding: 30px;
+}
+
+.nav-list .nav-item .nav-link
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-mobile
+{
+  display: none;
+  padding: 20px;
+}
+
+.nav-mobile div
+{
+    width: 30px;    
+    height: 5px;
+    background: #fff;
+    margin: 5px;
+
+}
+
+
+#rica
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 29em;
+    z-index: 0;
+    color: #38005d;
+}
+
+.principal
+{
+    padding: 100px;
+    background: #27003f;
+    color: #fff;
+}
+
+
+.principal .principal-content
+{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.principal .principal-content .principal-content-text .principal-content-text-titulo
+{
+    font-size: 4em;
+    z-index: 3;
+}
+
+.principal .principal-content .principal-content-text .principal-content-text-paragrafo
+{
+    font-size: 1.2em;
+    z-index: 4;
+}
+
+.principal .principal-content .principal-content-text .principal-content-text-btn
+{
+    position: relative;
+    top: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 40px;
+    background: #fff;
+    border-radius: 8px;
+    color: rgba(28, 0, 119, 0.9);
+    text-decoration: none;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+
+.principal .principal-content .principal-content-text .principal-content-text-btn:hover
+{
+    background: #27003f;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.principal .principal-content .principal-content-img img
+{
+    height: 500px;
+    border-radius: 50%;
+}
+
+.divisor
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #1a002a;
+}
+
+
+.divisor .divisor-img h1
+{
+    text-align: center;
+    color: #fff;
+}
+
+.divisor .divisor-img img
+{
+    position: relative;
+    right: 30px;
+    border-radius: 50%;
+}
+
+
+
+.segundaria-carac
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url(../Images/selva.jpg), no-repeat;
+    background-size: cover;
+}
+
+.segundaria-carac .caracteristica h1
+{
+    font-size: 4em;
+}
+
+.segundaria-carac .caracteristica p
+{
+    font-size: 1.2em;
+}
+
+.segundaria-carac .caracteristica
+{
+    width: 600px;
+    color: #fff;
+}
+
+.segundaria-carac .caracteristica-img img
+{
+    position: relative;
+    height: 500px;
+    animation: tuc 4s linear infinite;
+    border: 5px solid #00AF9C;
+    border-radius: 10%;
+}
+
+.requisitos
+{
+    padding: 40px;
+    background: #38005d;
+}
+
+.requisitos-content
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+
+.requisitos-content .requisitos-content-texto h1
+{
+    font-size: 3em;
+    padding: 10px;
+}
+
+.requisitos-content .requisitos-content-texto .ul-requisitos
+{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(7, 50px);
+    list-style: none;
+
+}
+
+.requisitos-content .requisitos-content-img img
+{
+    height: 700px;
+}
+
+.requisitos-content .requisitos-content-texto .ul-requisitos li
+{
+
+    padding: 10px;
+    border: 1px dotted #fff;
+    color: #fff;
+}
+
+
+.contato
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#38005d, rgba(1, 2, 77, 0.7)) ,url(../Images/chm.jpg), no-repeat;
+    background-size: cover;
+}
+
+.contato .contato-content .contanto-content-img
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+.contato .contato-content .contanto-content-img img 
+{
+    filter: saturate(5);
+    border-radius: 50%;
+    height: 400px;
+}
+
+.contato .contato-content .contato-cotent-form s
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.contato .contato-content .contato-cotent-form label, input
+{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.contato .contato-content .contato-cotent-form label
+{
+    color: #fff;
+    padding: 4px;
+}
+
+
+.contato .contato-content .contato-cotent-form input
+{
+    padding: 8px; 
+    font-size: 1.1em;   
+}
+
+.contato .contato-content .contato-cotent-form .btn-contato
+{
+    width: 100%;
+    margin: 30px 0px;
+    padding: 10px;
+    background: #00AF9C;
+
+    border: 1px solid #00AF9C;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.contato .contato-content .contato-cotent-form .btn-contato:hover
+{
+    color: #00AF9C;
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+.contato .contato-content .contato-cotent-form #desc
+{
+    text-align: left;
+    height: 100px;
+}
+
+
+@media(max-width: 999px) {
+    .principal .principal-content
+    {
+        flex-wrap: wrap;
+    }
+
+    .requisitos-content
+    {
+        flex-wrap: wrap;
+    }
+
+    .principal .principal-content .principal-content-text
+    {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .principal .principal-content .principal-content-img img
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .segundaria-carac
+    {
+        flex-wrap: wrap;
+    }
+
+    .segundaria-carac .caracteristica
+    {
+        text-align: center;
+        margin-bottom: 50px ;
+    }
+
+    #rica
+    {
+        font-size: 15em;
+    }
+
+    .principal .principal-content .principal-content-img img
+    {
+        height: 400px;
+    }
+
+}
+
+@media(max-width: 620px)
+{
+    .nav-mobile
+    {
+        display: block;
+    }
+
+    .nav-list
+    {
+        display: none;
+    }
+
+    .requisitos-content .requisitos-content-texto .ul-requisitos
+    {
+        grid-template-columns: 100%;
+        
+    }
+    .requisitos
+    {
+        padding: 100px;
+    }
+
+    #rica
+    {
+        font-size: 13em;
+    }
+
+    .principal .principal-content .principal-content-img img
+    {
+        height: 300px;
+        margin-left: 15%;
+
+    }
+}
+
+
