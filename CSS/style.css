@@ -423,6 +423,11 @@ body
         margin-left: 0;
         height: 200px;
     }
+
+    .principal .principal-content .principal-content-text .principal-content-text-btn
+    {
+        padding: 10px 25px;
+    }
 }
 
 
